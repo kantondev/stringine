@@ -21,7 +21,7 @@ var replace = function (str, search, replaceWith, count = -1, caseInsensitive = 
         count: ["number"],
         caseInsensitive: ["boolean"]
     };
-    let valid = require("../validateType")({
+    let validityError = require("../validateType")({
         str: str,
         search: search,
         replaceWith: replaceWith,
@@ -29,7 +29,7 @@ var replace = function (str, search, replaceWith, count = -1, caseInsensitive = 
         caseInsensitive: caseInsensitive
     }, validMap);
 
-    if (valid) return new TypeError(`Invalid type '${valid.invalid}' provided for '${valid.arg}', ${valid.expect} expected`);
+    if (validityError) return new TypeError(`Invalid type '${validityError.invalid}' provided for '${validityError.arg}', ${validityError.expect} expected`);
     
 
     if (typeof str || search || replaceWith != "string") return new TypeError("Invalid type provided, 'string' expected");

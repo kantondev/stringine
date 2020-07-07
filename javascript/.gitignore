@@ -1,0 +1,5 @@
+# Ignore local test file #
+test.js
+
+# Ignore possible nodemodules #
+node_modules/*

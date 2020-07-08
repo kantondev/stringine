@@ -1,0 +1,21 @@
+# Ignore local library testing files #
+test.*
+
+# Ignore possible nodemodules #
+**/node_modules/
+
+# Compiled files #
+*.pyc
+*.exe
+
+# Visual Studio files #
+**/.vs/
+**/bin/
+**/obj/
+
+# Project files #
+*.sln
+*.csproj
+
+# Python cache #
+**/__pycache__/

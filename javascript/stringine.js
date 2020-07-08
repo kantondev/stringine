@@ -6,7 +6,9 @@ const LIB = {
     replace: require("./lib/replace.js"),
     substringStart: require("./lib/substringStart.js"),
     substringEnd: require("./lib/substringEnd.js"),
-    reverse: require("./lib/reverse.js")
+    reverse: require("./lib/reverse.js"),
+    translate: require("./lib/translate.js"),
+    translateReverse: require("./lib/translateReverse.js")
 };
 
 // Export LIB for use

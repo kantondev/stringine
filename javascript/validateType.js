@@ -12,7 +12,7 @@ var validateType = function (args, validMap) {
         let item = args[i];
 
         for (let t of validMap[i]) {
-            if (typeof item == t) return {
+            if (typeof item != t) return {
                 "msg": `Invalid type '${typeof item}' provided for argument '${i}', ${validMap[i].join(" or ")} expected`,
             }
             else continue;

@@ -33,10 +33,10 @@ var substringEnd = function (str, search) {
         } else {
             if (!str.endsWith(search)) return str;
 
-            let reverseString = require("../reverseString.js");
+            let stringineReverse = require("./reverse.js");
 
-            search = reverseString(search);
-            str = reverseString(str);
+            search = stringineReverse(search);
+            str = stringineReverse(str);
             let arr = [str.split(search, 1).join(""), str.split(search).slice(1).join(search)];
 
             return reverseString(arr.join(""));

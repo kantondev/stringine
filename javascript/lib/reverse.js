@@ -5,7 +5,7 @@
  * 
  * @return {String} A reversed version of `str`.
  */
-var reverseString = function (str) {
+var reverse = function (str) {
 
     let char_arr = str.split("").reverse(),
     char_string = char_arr.join("");
@@ -14,4 +14,4 @@ var reverseString = function (str) {
     
 }
 
-module.exports = reverseString;
+module.exports = reverse;

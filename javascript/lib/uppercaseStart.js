@@ -27,16 +27,15 @@ var uppercaseStart = function (str, count = 1) {
     try {
         if (count == 0) return str;
 
-        let char_arr;
-        let output_arr = [];
+        let char_str, output_str;
 
         let intact = str.substring(count, str.length);
-        char_arr = str.substring(0, count).split("");
+        char_str = str.substring(0, count);
 
-        for (let i of char_arr) output_arr.push(i.toUpperCase());
+        output_str = char_arr.toLowerCase();
         
 
-        return output_arr.join("") + intact;
+        return output_str + intact;
     } catch (e) {
         return null;
     }

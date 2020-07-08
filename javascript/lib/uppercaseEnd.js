@@ -27,19 +27,18 @@ var uppercaseEnd = function (str, count = 1) {
     try {
         if (count == 0) return str;
 
-        let char_arr;
-        let output_arr = [];
+        let char_str, output_str;
 
         let stringineReverse = require("./reverse.js");
         str = stringineReverse(str);
 
         let intact = str.substring(count, str.length);
-        char_arr = str.substring(0, count).split("");
+        char_str = str.substring(0, count);
 
-        for (let i of char_arr) output_arr.push(i.toUpperCase());
+        output_str = char_arr.toLowerCase();
         
 
-        return stringineReverse(output_arr.join("") + intact);
+        return stringineReverse(output_str + intact);
     } catch (e) {
         return null;
     }

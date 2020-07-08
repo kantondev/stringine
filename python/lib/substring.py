@@ -1,5 +1,10 @@
+import os, sys
+sys.path.append(os.path.dirname(__file__))
+
+from isValidNumber import main as validNumber
+
 def substringStart(string, thing):
-    if thing.isnumeric():
+    if validNumber(thing):
         try:
             return (string[0:thing]) 
         except:
@@ -13,7 +18,7 @@ def substringStart(string, thing):
             return None
 
 def substringEnd(string, thing):
-    if thing.isnumeric():
+    if validNumber(thing):
         try:
             return (string[-thing:])
         except:

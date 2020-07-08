@@ -11,3 +11,8 @@ from lib.substring import substringEnd
 
 from lib.translate import main as translate
 from lib.translate import reverse as translateReverse
+
+from lib.lowercase import lowercaseStart
+from lib.lowercase import lowercaseEnd
+from lib.lowercase import uppercaseStart
+from lib.lowercase import uppercaseEnd

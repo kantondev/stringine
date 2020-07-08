@@ -25,6 +25,8 @@ var translateReverse = function (str, map) {
     
     if (str.length === 0 || Object.keys(map).length === 0) return null;
 
+    /* -------- Validation ends, actual code below -------- */
+
     try {
         map = require("../flipObject.js")(map);
         let input_chars = str.split(""),

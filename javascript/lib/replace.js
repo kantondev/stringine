@@ -33,6 +33,8 @@ var replace = function (str, search, replaceWith, count = -1, caseInsensitive = 
     
     if (search.length === 0 || search.length === 0 || replaceWith.length === 0) return null;
 
+    /* -------- Validation ends, actual code below -------- */
+
     try {
         if (count == 0) return str;
 

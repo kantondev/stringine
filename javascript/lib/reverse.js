@@ -19,6 +19,8 @@ var reverse = function (str) {
     
     if (str.length === 0) return null;
 
+    /* -------- Validation ends, actual code below -------- */
+
     try {
         let char_arr = str.split("").reverse(),
         char_string = char_arr.join("");

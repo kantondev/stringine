@@ -24,6 +24,8 @@ var lowercaseEnd = function (str, count = 1) {
     if (str.length === 0) return null;
     if (count < 0) return null;
 
+    /* -------- Validation ends, actual code below -------- */
+
     try {
         if (count == 0) return str;
 

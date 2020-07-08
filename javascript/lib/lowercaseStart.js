@@ -32,7 +32,7 @@ var uppercaseStart = function (str, count = 1) {
         let intact = str.substring(count, str.length);
         char_str = str.substring(0, count);
 
-        output_str = char_arr.toLowerCase();
+        output_str = char_str.toLowerCase();
         
 
         return output_str + intact;

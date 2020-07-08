@@ -39,7 +39,6 @@ var substringEnd = function (str, search) {
             str = reverseString(str);
             let arr = [str.split(search, 1).join(""), str.split(search).slice(1).join(search)];
 
-            // this is a next level chain :)
             return reverseString(arr.join(""));
         }
     } catch (e) {

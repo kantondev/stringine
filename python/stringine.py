@@ -14,5 +14,5 @@ from lib.translate import reverse as translateReverse
 
 from lib.lowercase import lowercaseStart
 from lib.lowercase import lowercaseEnd
-from lib.lowercase import uppercaseStart
-from lib.lowercase import uppercaseEnd
+from lib.uppercase import uppercaseStart
+from lib.uppercase import uppercaseEnd

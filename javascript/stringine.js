@@ -3,7 +3,9 @@
 
 // Import all Stringine elements into the LIB object
 const LIB = {
-    replace: require("./lib/replace.js")
+    replace: require("./lib/replace.js"),
+    substringStart: require("./lib/substringStart.js"),
+    substringEnd: require("./lib/substringEnd.js")
 };
 
 // Export LIB for use

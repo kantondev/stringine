@@ -5,7 +5,7 @@
  * @param {Object} args An object of arguments used. Format: {variable name : variable value}
  * @param {Object} validMap Map of valid types for the argument. Format: {variable name : [array of valid types]}
  */
-let validateType = function (args, validMap) {
+var validateType = function (args, validMap) {
 
     for (let i in args) {
 
@@ -17,9 +17,7 @@ let validateType = function (args, validMap) {
         }
 
         if (!scan) return {
-            "invalid": typeof item,
-            "arg": i,
-            "expect": validMap[i].join(" or ")
+            "msg": `Invalid type '${typeof item}' provided for argument '${i}', ${validMap[i].join(" or ")} expected`,
         }
         else continue;
 

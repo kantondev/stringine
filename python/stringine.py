@@ -5,5 +5,9 @@
 # Imports for other files:
 from lib.replace import main as replace
 from lib.replace import replaceCaseInsensitive
+
 from lib.substring import substringStart
 from lib.substring import substringEnd
+
+from lib.translate import main as translate
+from lib.translate import reverse as translateReverse

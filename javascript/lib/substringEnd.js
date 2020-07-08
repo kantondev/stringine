@@ -25,7 +25,7 @@ var substringEnd = function (str, search) {
     let checkSearch = typeof search == "number" ? search : search.length;
     if (str.length === 0) return null;
     
-    /* -------- Validation ends, actual code below -------- */
+    /* -- Validation ends, actual code below -- */
 
     try {
         if (checkSearch === 0) return str;

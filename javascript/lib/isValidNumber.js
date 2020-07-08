@@ -20,7 +20,7 @@ var isValidNumber = function (str) {
 
     if (str.length === 0) return false;
 
-    /* -------- Validation ends, actual code below -------- */
+    /* -- Validation ends, actual code below -- */
 
     // This is a very simple function that just uses isNaN.
     // It exists mainly for cross-platform support :)

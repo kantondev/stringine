@@ -26,7 +26,7 @@ var translate = function (str, map) {
     
     if (str.length === 0 || Object.keys(map).length === 0) return null;
 
-    /* -------- Validation ends, actual code below -------- */
+    /* -- Validation ends, actual code below -- */
 
     try {
         let input_chars = str.split(""),

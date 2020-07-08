@@ -1,10 +1,26 @@
-def substringStart(String, Number):
-    try:
-        return (String[0:Number])
-    except:
-        return None
-def substringEnd(String, Number):
-    try:
-        return (String[(Number +1):])
-    except:
-        return None
+def substringStart(String, thing):
+    if thing.isnumeric():
+        try:
+            return (String[0:thing]) 
+        except:
+            return None
+    else:
+        try:
+            if String.startswith(thing):
+                return (String[len(thing):])
+                
+        except:
+            return None
+
+def substringEnd(String, thing):
+    if thing.isnumeric():
+        try:
+            return (String[-thing:])
+        except:
+            return None
+    else:
+        try:
+            if String.endswith(thing):
+                return (String[0:(len(String) - len(thing))])    
+        except:
+            return None

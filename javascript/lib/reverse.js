@@ -7,10 +7,27 @@
  */
 var reverse = function (str) {
 
-    let char_arr = str.split("").reverse(),
-    char_string = char_arr.join("");
+    // Map of valid types
+    let validMap = {
+        str: ["string"]
+    };
+    let validityError = require("../validateType.js")({
+        str: str
+    }, validMap);
+
+    if (validityError) throw new TypeError(validityError.msg);
     
-    return char_string;
+    if (str.length === 0) return null;
+
+    try {
+        let char_arr = str.split("").reverse(),
+        char_string = char_arr.join("");
+        
+        return char_string;
+    } catch (e) {
+        return null;
+    }
+    
     
 }
 

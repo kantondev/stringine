@@ -17,7 +17,7 @@ var substringStart = function (str, search) {
     };
     let validityError = require("../validateType.js")({
         str: str,
-        search: search,
+        search: search
     }, validMap);
 
     if (validityError) throw new TypeError(validityError.msg);

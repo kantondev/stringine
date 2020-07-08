@@ -12,7 +12,8 @@ const LIB = {
     uppercaseStart: require("./lib/uppercaseStart.js"),
     uppercaseEnd: require("./lib/uppercaseEnd.js"),
     lowercaseStart: require("./lib/uppercaseStart.js"),
-    lowercaseEnd: require("./lib/lowercaseEnd.js")
+    lowercaseEnd: require("./lib/lowercaseEnd.js"),
+    isValidNumber: require("./lib/isValidNumber.js")
 };
 
 // Export LIB for use

@@ -1,11 +1,11 @@
-def main(String, Replace, Replacement, Count = -1):
+def main(string, replace, replacement, count = -1):
     try:
-        return String.replace(Replace, Replacement, Count)
+        return string.replace(replace, replacement, count)
     except: return None
 
-def replaceCaseInsensitive(String, Replace, Replacement, Count = -1):
+def replaceCaseInsensitive(string, replace, replacement, count = -1):
     try:
-        lowerstr = String.lower().split(Replace.lower())
-        str = Replacement.join(lowerstr)
-        return str.replace(Replace, Replacement, Count)
+        lowerstr = string.lower().split(replace.lower())
+        string = replacement.join(lowerstr)
+        return string.replace(replace, replacement, count)
     except: return None

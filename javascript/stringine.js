@@ -8,7 +8,11 @@ const LIB = {
     substringEnd: require("./lib/substringEnd.js"),
     reverse: require("./lib/reverse.js"),
     translate: require("./lib/translate.js"),
-    translateReverse: require("./lib/translateReverse.js")
+    translateReverse: require("./lib/translateReverse.js"),
+    uppercaseStart: require("./lib/uppercaseStart.js"),
+    uppercaseEnd: require("./lib/uppercaseEnd.js"),
+    lowercaseStart: require("./lib/uppercaseStart.js"),
+    lowercaseEnd: require("./lib/lowercaseEnd.js")
 };
 
 // Export LIB for use

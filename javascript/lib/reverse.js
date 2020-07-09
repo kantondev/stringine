@@ -1,9 +1,11 @@
 /**
- * This function provides a (minor) simplification for reversing a JavaScript string.
+ * This function provides a (minor) simplification for reversing a string.
  * 
  * @param {String} str The string to be reversed.
  * 
  * @return {String} A reversed version of `str`.
+ * 
+ * Returns `null` or throws a `TypeError` if the arguments are not valid or an error occurs.
  */
 var reverse = function (str) {
 

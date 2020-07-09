@@ -1,6 +1,6 @@
 # Welcome to Stringine.py, this is the main file in the Python version of the Stringine project.
 
-# If something goes wrong the functions will return None.
+# if something goes wrong it will return None
 
 # Imports for other files:
 from lib.replace import main as replace
@@ -16,3 +16,8 @@ from lib.lowercase import lowercaseStart
 from lib.lowercase import lowercaseEnd
 from lib.uppercase import uppercaseStart
 from lib.uppercase import uppercaseEnd
+
+from lib.randomChars import main as randomChars
+
+from lib.map import char as charMap
+from lib.map import translate as translateMap

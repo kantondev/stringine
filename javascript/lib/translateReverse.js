@@ -2,6 +2,8 @@
  * Use this for reversing `translate` output without having to make a new map.
  * Translates a string (character by character) as instructed by a character map that is first reversed.
  * 
+ * Note: Translation is case insensitive: e.g. a and A are translated as the same character (Lowercase).
+ * 
  * @param {String} str The string to translate.
  * @param {Object} map The map to instruct translation, with the format {normal character : translated character}. NOTE: The map is automatically reversed.
  * 
@@ -33,13 +35,13 @@ var translateReverse = function (str, map) {
         output_chars = [];
         for (let i of input_chars) {
 
-            if (!Object.keys(map).includes(i)) {
+            if (!Object.keys(map).includes(i.toLowerCase())) {
                 output_chars.push(i);
                 continue;
             }
 
-            if (map[i].length !== 1) return null;
-            output_chars.push(map[i]);
+            if (map[i.toLowerCase()].length !== 1) return null;
+            output_chars.push(map[i.toLowerCase()].toLowerCase());
 
         }
         return output_chars.join("");

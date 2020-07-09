@@ -1,10 +1,12 @@
 /**
  * Translates a string (character by character) as instructed by a character map.
  * 
+ * Note: Translation is case insensitive: e.g. a and A are translated as the same character (Lowercase).
+ * 
  * @param {String} str The string to translate.
  * @param {Object} map The map to instruct translation, with the format {normal character : translated character}.
  * 
- * @return {String} The translated version of `str`. If a character is not found from the map or has an invalid length (not 1 character -> 1 character) it is kept intact.
+ * @return {null|String} The translated version of `str`. If a character is not found from the map or has an invalid length (not 1 character -> 1 character) it is kept intact.
  * 
  * Returns `null` or throws a `TypeError` if the arguments are not valid or an error occurs.
  * 
@@ -33,13 +35,13 @@ var translate = function (str, map) {
         output_chars = [];
         for (let i of input_chars) {
 
-            if (!Object.keys(map).includes(i)) {
+            if (!Object.keys(map).includes(i.toLowerCase())) {
                 output_chars.push(i);
                 continue;
             }
 
-            if (map[i].length !== 1) return null;
-            output_chars.push(map[i]);
+            if (map[i.toLowerCase()].length !== 1) return null;
+            output_chars.push(map[i.toLowerCase()].toLowerCase());
 
         }
         return output_chars.join("");

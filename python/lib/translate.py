@@ -1,11 +1,13 @@
+# Note: Translation is case insensitive: e.g. a and A are translated as the same character (Lowercase).
+
 def main(string, map):
     try:
         in_chars = list(string)
         out_chars = []
 
         for i in in_chars:
-            if i in map:
-                out_chars.append(map[i])
+            if i.lower() in map:
+                out_chars.append(map[i.lower()].lower())
             else:
                 out_chars.append(i)
 
@@ -27,8 +29,8 @@ def reverse(string, originalMap):
 
 
         for i in in_chars:
-            if i in map:
-                out_chars.append(map[i])
+            if i.lower() in map:
+                out_chars.append(map[i.lower()].lower())
             else:
                 out_chars.append(i)
         

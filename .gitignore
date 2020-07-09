@@ -8,6 +8,9 @@ test.*
 *.pyc
 *.exe
 
+# Compiled TypeScript #
+typescript/*.js
+
 # Visual Studio files #
 **/.vs/
 **/bin/

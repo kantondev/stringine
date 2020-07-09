@@ -9,7 +9,7 @@
  * Returns `null` or throws a `TypeError` if the arguments are not valid or an error occurs.
  */
 
-var uppercaseStart = function (str, count = 1) {
+var lowercaseStart = function (str, count = 1) {
 
     // Map of valid types
     let validMap = {
@@ -46,4 +46,4 @@ var uppercaseStart = function (str, count = 1) {
 
 }
 
-module.exports = uppercaseStart;
+module.exports = lowercaseStart;

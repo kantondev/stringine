@@ -1,6 +1,6 @@
 # Welcome to Stringine.py, this is the main file in the Python version of the Stringine project.
 
-# if something goes wrong it will return None
+# If something goes wrong the functions will return None.
 
 # Imports for other files:
 from lib.replace import main as replace

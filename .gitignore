@@ -11,6 +11,9 @@ test.*
 # Compiled TypeScript #
 typescript/**/*.js
 
+# TypeScript compiler options #
+typescript/tsconfig.json
+
 # Visual Studio files #
 **/.vs/
 **/bin/

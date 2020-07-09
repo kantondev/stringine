@@ -13,7 +13,11 @@ const LIB = {
     uppercaseEnd: require("./lib/uppercaseEnd.js"),
     lowercaseStart: require("./lib/uppercaseStart.js"),
     lowercaseEnd: require("./lib/lowercaseEnd.js"),
-    isValidNumber: require("./lib/isValidNumber.js")
+    isValidNumber: require("./lib/isValidNumber.js"),
+    randomChars: require("./lib/randomChars.js"),
+
+    translateMap: require("./lib/map.js").translate,
+    charMap: require("./lib/map.js").char,
 };
 
 // Export LIB for use

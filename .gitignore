@@ -9,7 +9,7 @@ test.*
 *.exe
 
 # Compiled TypeScript #
-typescript/*.js
+typescript/**/*.js
 
 # Visual Studio files #
 **/.vs/

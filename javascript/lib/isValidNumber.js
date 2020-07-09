@@ -4,6 +4,8 @@
  * @param {String} str The string to be validated.
  * 
  * @return {Boolean} Whether the string is a valid number.
+ * 
+ * Returns `null` or throws a `TypeError` if the arguments are not valid or an error occurs.
  */
 
 var isValidNumber = function (str) {

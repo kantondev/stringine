@@ -24,7 +24,7 @@ var lowercaseStart = function (str : string, count : number = 1) {
 
         let char_str : string, output_str : string;
 
-        let intact = str.substring(count, str.length);
+        let intact : string = str.substring(count, str.length);
         char_str = str.substring(0, count);
 
         output_str = char_str.toLowerCase();
@@ -63,7 +63,7 @@ var lowercaseEnd = function (str : string, count : number = 1) {
 
         str = reverse(str);
 
-        let intact = str.substring(count, str.length);
+        let intact : string = str.substring(count, str.length);
         char_str = str.substring(0, count);
 
         output_str = char_str.toLowerCase();

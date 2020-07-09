@@ -12,7 +12,7 @@ import reverse from "./reverse";
  * Returns `null` if the arguments are not valid or an error occurs.
  */
 
-var uppercaseStart = function (str, count = 1) {
+var uppercaseStart = function (str : string, count : number = 1) {
 
     if (str.length === 0) return null;
     if (count < 0) return null;
@@ -22,9 +22,9 @@ var uppercaseStart = function (str, count = 1) {
     try {
         if (count == 0) return str;
 
-        let char_str, output_str;
+        let char_str : string, output_str : string;
 
-        let intact = str.substring(count, str.length);
+        let intact : string = str.substring(count, str.length);
         char_str = str.substring(0, count);
 
         output_str = char_str.toUpperCase();
@@ -48,7 +48,7 @@ var uppercaseStart = function (str, count = 1) {
  * Returns `null` if the arguments are not valid or an error occurs.
  */
 
-var uppercaseEnd = function (str, count = 1) {
+var uppercaseEnd = function (str : string, count : number = 1) {
 
     if (str.length === 0) return null;
     if (count < 0) return null;
@@ -58,11 +58,11 @@ var uppercaseEnd = function (str, count = 1) {
     try {
         if (count == 0) return str;
 
-        let char_str, output_str;
+        let char_str : string, output_str : string;
 
         str = reverse(str);
 
-        let intact = str.substring(count, str.length);
+        let intact : string = str.substring(count, str.length);
         char_str = str.substring(0, count);
 
         output_str = char_str.toUpperCase();

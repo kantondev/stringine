@@ -1,7 +1,7 @@
-# Ignore local library testing files #
+# Library testing files #
 test.*
 
-# Ignore possible nodemodules #
+# Possible nodemodules #
 **/node_modules/
 
 # Compiled files #

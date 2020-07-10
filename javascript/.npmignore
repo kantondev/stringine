@@ -1,0 +1,6 @@
+# Library testing files #
+test.*
+
+# Package files #
+package.json
+

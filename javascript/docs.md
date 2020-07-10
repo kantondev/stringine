@@ -1,5 +1,5 @@
 # Stringine for JavaScript/TypeScript
-Read more about Stringine as a project [here](https://github.com/kantondev/stringine#readme).
+Read more about Stringine as a project [here](https://github.com/kantondev/stringine/blob/master/README.md).
 
 * This documentation applies to both JavaScript and TypeScript libraries available of Stringine, but is documented mainly as JavaScript.
 
@@ -36,7 +36,9 @@ console.log(stringine.isValidNumber("26"));
 ```
 
 
-`lowercaseStart(str, count)` -- Converts the specified amount of characters from the start of the provided string to lowercase.
+`lowercaseStart(str, count?)` -- Converts the specified amount of characters from the start of the provided string to lowercase.
+
+`count` -- optional (defaults to `1`).
 
 Example:
 ```javascript
@@ -44,10 +46,12 @@ console.log(stringine.lowercaseStart("FOOBAR", 3));
 // fooBAR
 ```
 
-`lowercaseEnd(str, count)` -- Converts the specified amount of characters from the end of the provided string to lowercase.
+`lowercaseEnd(str, count?)` -- Converts the specified amount of characters from the end of the provided string to lowercase.
 
 
-`uppercaseStart(str, count)` -- Converts the specified amount of characters from the start of the provided string to uppercase.
+`uppercaseStart(str, count?)` -- Converts the specified amount of characters from the start of the provided string to uppercase.
+
+`count` -- optional (defaults to `1`).
 
 Example:
 ```javascript
@@ -55,7 +59,7 @@ console.log(stringine.uppercaseStart("foObAr", 2));
 // FOObAr
 ```
 
-`uppercaseEnd(str, count)` -- Converts the specified amount of characters from the end of the provided string to uppercase.
+`uppercaseEnd(str, count?)` -- Converts the specified amount of characters from the end of the provided string to uppercase.
 
 
 `randomChars(length, charMap)` -- Generates a sequence of random characters, as instructed by the character map (which is an array).
@@ -113,7 +117,7 @@ console.log(stringine.substringStart(myString, "foo "));
 Example:
 ```javascript
 var myString = "foo bar baz"
-console.log(stringine.substringStart(myString, " baz"));
+console.log(stringine.substringEnd(myString, " baz"));
 // foo bar
 ```
 
@@ -139,7 +143,7 @@ Use this for reversing `translate` output without having to make a new map.
 Example:
 ```javascript
 var myString = "£%¤¤~ ]~<¤/!"
-console.log(stringine.translate(myString, stringine.translateMap.default));
+console.log(stringine.translateReverse(myString, stringine.translateMap.default));
 // Hello World!
 ```
 

@@ -1,5 +1,5 @@
 /**
- * This function provides a (minor) simplification for reversing a string.
+ * This function provides a simplification for reversing a string.
  * 
  * @param {String} str The string to be reversed.
  * 

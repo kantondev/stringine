@@ -40,7 +40,7 @@ console.log(stringine.isValidNumber("26"));
 
 Example:
 ```javascript
-console.log(stringine.lowerCaseStart("FOOBAR", 3));
+console.log(stringine.lowercaseStart("FOOBAR", 3));
 // fooBAR
 ```
 
@@ -51,7 +51,7 @@ console.log(stringine.lowerCaseStart("FOOBAR", 3));
 
 Example:
 ```javascript
-console.log(stringine.upperCaseStart("foObAr", 2));
+console.log(stringine.uppercaseStart("foObAr", 2));
 // FOObAr
 ```
 

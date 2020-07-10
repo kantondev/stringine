@@ -1,5 +1,5 @@
 /**
- * Replaces all occurrences of a string with another.
+ * Replaces all (or the specified amount of) occurrences of a string with another.
  * 
  * @param {String} str The string to search `search` strings from.
  * @param {String} search The string to search for.

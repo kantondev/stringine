@@ -5,6 +5,7 @@ A simple cross-platform string manipulation utility
 ### Looking for documentation?
 
 * [JavaScript/TypeScript](https://github.com/kantondev/stringine/blob/master/javascript/docs.md)
+* Python probably coming soon
 
 ### What's Stringine?
 

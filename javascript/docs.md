@@ -58,7 +58,7 @@ console.log(stringine.uppercaseStart("foObAr", 2));
 `uppercaseEnd(str, count)` -- Converts the specified amount of characters from the end of the provided string to uppercase.
 
 
-`randomChars(length, charMap)` -- Generates a sequence of random characters, as instructed by the character map.
+`randomChars(length, charMap)` -- Generates a sequence of random characters, as instructed by the character map (which is an array).
 
 You can get built-in character maps from the `charMap` object (explained further in the Other resources section).
 
@@ -66,6 +66,11 @@ Example:
 ```javascript
 console.log(stringine.randomChars(8, stringine.charMap.az_numbers));
 // (for example): 92obj0sk
+```
+
+```javascript
+console.log(stringine.randomChars(4, ["a", "b", "8", "f", "/"]));
+// (for example): 8b/a
 ```
 
 
@@ -113,9 +118,9 @@ console.log(stringine.substringStart(myString, " baz"));
 ```
 
 
-`translate(str, map)` -- Translates a string (character by character) as instructed by a character map.
+`translate(str, map)` -- Translates a string (character by character) as instructed by a translation map (which is an object).
 
-You can get built-in translation maps from the `transateMap` object (explained further in the Other resources section).
+You can get built-in translation maps from the `translateMap` object (explained further in the Other resources section).
 
 Note: Translation is case insensitive: e.g. a and A are translated as the same character (Lowercase).
 
@@ -127,7 +132,7 @@ console.log(stringine.translate(myString, stringine.translateMap.default));
 ```
 
 
-`translateReverse(str, map)` -- Translates a string (character by character) as instructed by a character map that is first reversed.
+`translateReverse(str, map)` -- Translates a string (character by character) as instructed by a translation map that is first reversed.
 
 Use this for reversing `translate` output without having to make a new map.
 

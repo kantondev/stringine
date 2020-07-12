@@ -18,16 +18,17 @@ var randomChars = function (length : number, charMap : Array<string>) {
     try {
         if (charMap.length === 0) return "";
 
-        let output_str : string = "";
+        let output_arr : Array<string> = [];
 
-        for (let i = 0; i < length; i++) {
+        for (let i : number = 0; i < length; i++) {
             let index : number = Math.floor(Math.random()*charMap.length),
             item : string = charMap[index];
 
             if (item.length != 1) return null;
-            else output_str += item;
+            else output_arr.push(item);
         }
         
+        let output_str = output_arr.join("");
         return output_str;
     } catch (e) {
         return null;

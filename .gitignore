@@ -28,3 +28,4 @@ typescript/tsconfig.json
 
 # Package files #
 package.json
+package-lock.json

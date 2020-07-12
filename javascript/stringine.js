@@ -15,6 +15,7 @@ const LIB = {
     lowercaseEnd: require("./lib/lowercaseEnd.js"),
     isValidNumber: require("./lib/isValidNumber.js"),
     randomChars: require("./lib/randomChars.js"),
+    rotate: require("./lib/rotate.js"),
 
     translateMap: require("./lib/map.js").translate,
     charMap: require("./lib/map.js").char,

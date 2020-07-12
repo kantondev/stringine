@@ -10,6 +10,8 @@ import sub from "./lib/substring";
 import translate from "./lib/translate";
 import lowercase from "./lib/lowercase";
 import uppercase from "./lib/uppercase";
+import integrity from "./lib/integrity";
+import rotate from "./lib/rotate";
 
 import maps from "./lib/map";
 
@@ -27,6 +29,8 @@ const stringine = {
     lowercaseEnd: lowercase.lowercaseEnd,
     uppercaseStart: uppercase.uppercaseStart,
     uppercaseEnd: uppercase.uppercaseEnd,
+    integrity: integrity,
+    rotate: rotate,
 
 
     translateMap: maps.translateMap,

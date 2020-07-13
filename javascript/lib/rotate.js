@@ -14,6 +14,20 @@
 
 var rotate = function (str, count = 1, separator = "") {
 
+    // Map of valid types
+    let validMap = {
+        str: ["string"],
+        count: ["number"],
+        separator: ["string"]
+    };
+    let validityError = require("../validateType.js")({
+        str: str,
+        count: count,
+        separator: separator
+    }, validMap);
+
+    if (validityError) throw new TypeError(validityError.msg);
+
     if (str.length === 0) return null;
     if (count < 0 || count > str.length) return null;
 

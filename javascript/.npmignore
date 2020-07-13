@@ -3,4 +3,7 @@ test.*
 
 # Package files #
 package.json
+package-lock.json
 
+# Documentation #
+docs.md

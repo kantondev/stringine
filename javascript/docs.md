@@ -38,7 +38,7 @@ console.log(stringine.isValidNumber("26"));
 
 `lowercaseStart(str, count?)` -- Converts the specified amount of characters from the start of the provided string to lowercase.
 
-`count` -- optional (defaults to `1`).
+Argument `count` -- optional (defaults to `1`).
 
 Example:
 ```javascript
@@ -51,7 +51,7 @@ console.log(stringine.lowercaseStart("FOOBAR", 3));
 
 `uppercaseStart(str, count?)` -- Converts the specified amount of characters from the start of the provided string to uppercase.
 
-`count` -- optional (defaults to `1`).
+Argument `count` -- optional (defaults to `1`).
 
 Example:
 ```javascript
@@ -72,6 +72,7 @@ console.log(stringine.randomChars(8, stringine.charMap.az_numbers));
 // (for example): 92obj0sk
 ```
 
+Example with a custom character map:
 ```javascript
 console.log(stringine.randomChars(4, ["a", "b", "8", "f", "/"]));
 // (for example): 8b/a
@@ -80,13 +81,13 @@ console.log(stringine.randomChars(4, ["a", "b", "8", "f", "/"]));
 
 `replace(str, search, replaceWith, count?, caseInsensitive?)` -- Replaces all (or the specified amount of) occurrences of a string with another.
 
-`count` -- optional (defaults to `1`). You can use this argument to make Stringine only replace a certain amount of occurrences (from the start of the string).
+Argument `count` -- optional (defaults to `1`). You can use this argument to make Stringine only replace a certain amount of occurrences (from the start of the string).
 
 `caseInsensitive` -- optional (defaults to `false`). You can use this argument to make the `search` argument ignore case.
 
 Example:
 ```javascript
-var test_string = "I like eating spicy foods."
+var test_string = "I like eating spicy foods.";
 console.log(stringine.replace(test_string, "spicy", "sweet"));
 // I like eating sweet foods.
 ```
@@ -96,9 +97,30 @@ console.log(stringine.replace(test_string, "spicy", "sweet"));
 
 Example:
 ```javascript
-var test_string = "I like eating spicy foods."
+var test_string = "I like eating spicy foods.";
 console.log(stringine.reverse(test_string));
 // .sdoof ycips gnitae ekil I
+```
+
+
+`rotate(str, count?, separator?)` -- Rotates the string (moves the specified amount of characters from the end of the string to the start).
+
+Argument `count` -- optional (defaults to `1`). How many characters should be moved.
+
+Argument `separator` -- optional (defaults to empty). A string that should separate the moved characters and the original characters.
+
+Example:
+```javascript
+var rotateThis = "123456";
+console.log(stringine.rotate(rotateThis, 2));
+// 561234
+```
+
+Example with separator:
+```javascript
+var rotateThis = "123456";
+console.log(stringine.rotate(rotateThis, 2, "-"));
+// 56-1234
 ```
 
 
@@ -106,7 +128,7 @@ console.log(stringine.reverse(test_string));
 
 Example:
 ```javascript
-var myString = "foo bar baz"
+var myString = "foo bar baz";
 console.log(stringine.substringStart(myString, "foo "));
 // bar baz
 ```
@@ -116,7 +138,7 @@ console.log(stringine.substringStart(myString, "foo "));
 
 Example:
 ```javascript
-var myString = "foo bar baz"
+var myString = "foo bar baz";
 console.log(stringine.substringEnd(myString, " baz"));
 // foo bar
 ```
@@ -130,7 +152,7 @@ Note: Translation is case insensitive: e.g. a and A are translated as the same c
 
 Example:
 ```javascript
-var myString = "Hello World!"
+var myString = "Hello World!";
 console.log(stringine.translate(myString, stringine.translateMap.default));
 // £%¤¤~ ]~<¤/!
 ```
@@ -142,7 +164,7 @@ Use this for reversing `translate` output without having to make a new map.
 
 Example:
 ```javascript
-var myString = "£%¤¤~ ]~<¤/!"
+var myString = "£%¤¤~ ]~<¤/!";
 console.log(stringine.translateReverse(myString, stringine.translateMap.default));
 // Hello World!
 ```

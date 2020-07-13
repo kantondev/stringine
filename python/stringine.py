@@ -17,6 +17,8 @@ from lib.lowercase import lowercaseEnd
 from lib.uppercase import uppercaseStart
 from lib.uppercase import uppercaseEnd
 
+from lib.rotate import main as rotate
+
 from lib.randomChars import main as randomChars
 
 from lib.map import char as charMap

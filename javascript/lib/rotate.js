@@ -20,11 +20,7 @@ var rotate = function (str, count = 1, separator = "") {
     /* -- Validation ends, actual code below -- */
 
     try {
-        let output_str,
-        ind = str.length - count;
-
-        output_str = str.substring(ind, str.length) + separator + str.substring(0, ind);
-        
+        let ind = str.length - count;
         return str.substring(ind, str.length) + separator + str.substring(0, ind);
     } catch (e) {
         return null;

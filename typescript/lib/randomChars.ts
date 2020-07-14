@@ -9,7 +9,7 @@
  * Returns `null` if the arguments are not valid or an error occurs.
  */
 
-var randomChars = function (length : number, charMap : Array<string>) {
+var randomChars = function (length : number, charMap : Array<string>) : string|null {
 
     if (length === 0) return null;
 

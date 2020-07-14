@@ -11,7 +11,7 @@ import stringineReverse from "./reverse";
  * 
  * Returns `null` if the arguments are not valid or an error occurs.
  */
-var substringStart = function (str : string, search : string) {
+var substringStart = function (str : string, search : string) : string|null {
     
     if (str.length === 0) return null;
 
@@ -42,7 +42,7 @@ var substringStart = function (str : string, search : string) {
  * 
  * Returns `null` if the arguments are not valid or an error occurs.
  */
-var substringEnd = function (str : string, search : string) {
+var substringEnd = function (str : string, search : string) : string|null {
 
     if (str.length === 0) return null;
 

@@ -15,7 +15,7 @@ import flipObject from "../flipObject";
  * 
  * If you want to reverse translate without changing your translation map, use `translateReverse` instead. It automatically reverses your map.
  */
-var translate = function (str : string, map : any) {
+var translate = function (str : string, map : any) : string|null {
   
     if (str.length === 0 || Object.keys(map).length === 0) return null;
 
@@ -60,7 +60,7 @@ var translate = function (str : string, map : any) {
  * 
  * Returns `null` or throws a `TypeError` if the arguments are not valid or an error occurs.
  */
-var translateReverse = function (str : string, map : any) {
+var translateReverse = function (str : string, map : any) : string|null {
 
     if (str.length === 0 || Object.keys(map).length === 0) return null;
 

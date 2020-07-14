@@ -11,7 +11,7 @@
  * 
  * Returns `null` if an error occurs.
  */
-var replace = function (str : string, search : string, replaceWith : string, count : number = -1, caseInsensitive : boolean = false) {
+var replace = function (str : string, search : string, replaceWith : string, count : number = -1, caseInsensitive : boolean = false) : string|null {
     
     if (search.length === 0 || search.length === 0 || replaceWith.length === 0) return null;
 

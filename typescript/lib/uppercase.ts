@@ -12,7 +12,7 @@ import reverse from "./reverse";
  * Returns `null` if the arguments are not valid or an error occurs.
  */
 
-var uppercaseStart = function (str : string, count : number = 1) {
+var uppercaseStart = function (str : string, count : number = 1) : string|null {
 
     if (str.length === 0) return null;
     if (count < 0) return null;
@@ -48,7 +48,7 @@ var uppercaseStart = function (str : string, count : number = 1) {
  * Returns `null` if the arguments are not valid or an error occurs.
  */
 
-var uppercaseEnd = function (str : string, count : number = 1) {
+var uppercaseEnd = function (str : string, count : number = 1) : string|null {
 
     if (str.length === 0) return null;
     if (count < 0) return null;

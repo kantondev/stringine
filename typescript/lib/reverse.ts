@@ -7,7 +7,7 @@
  * 
  * Returns `null` if the arguments are not valid or an error occurs.
  */
-var reverse = function (str : string) {
+var reverse = function (str : string) : string|null {
     
     if (str.length === 0) return null;
 

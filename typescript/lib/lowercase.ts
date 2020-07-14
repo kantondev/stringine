@@ -12,7 +12,7 @@ import reverse from "./reverse";
  * Returns `null` if the arguments are not valid or an error occurs.
  */
 
-var lowercaseStart = function (str : string, count : number = 1) {
+var lowercaseStart = function (str : string, count : number = 1) : string|null {
 
     if (str.length === 0) return null;
     if (count < 0) return null;
@@ -49,7 +49,7 @@ var lowercaseStart = function (str : string, count : number = 1) {
  * Returns `null` if the arguments are not valid or an error occurs.
  */
 
-var lowercaseEnd = function (str : string, count : number = 1) {
+var lowercaseEnd = function (str : string, count : number = 1) : string|null {
 
     if (str.length === 0) return null;
     if (count < 0) return null;

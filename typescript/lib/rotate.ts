@@ -12,7 +12,7 @@
  * Warning: this will return `null` if you try to move more characters than the string has.
  */
 
-var rotate = function (str : string, count : number = 1, separator : string = "") {
+var rotate = function (str : string, count : number = 1, separator : string = "") : string|null {
 
     if (str.length === 0) return null;
     if (count < 0 || count > str.length) return null;

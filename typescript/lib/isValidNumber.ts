@@ -6,7 +6,7 @@
  * @return {Boolean} Whether the string is a valid number.
  */
 
-var isValidNumber = function (str : string) {
+var isValidNumber = function (str : string) : boolean|null {
 
     if (str.length === 0) return false;
 

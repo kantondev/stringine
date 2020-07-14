@@ -4,7 +4,7 @@ A simple cross-platform string manipulation utility
 
 ### Looking for documentation?
 
-* [Stringine docs](https://github.com/kantondev/stringine/blob/master/javascript/docs.md)
+* [Stringine docs](https://github.com/kantondev/stringine/blob/master/docs.md)
 
 ### What's Stringine?
 

@@ -145,7 +145,7 @@ var integrity = function (str : string) : string|null {
                         return;
                     }
                     if (round == (spinRounds - 1)) return spin(round + 1, xorLast, sbtos(btosb(xorReference)));
-                    else return spin(round + 1, padBits([], chunkLengthBits), reverse(str).repeat(repeatSum) + str);
+                    else return spin(round + 1, padBits([], chunkLengthBits), reverse(targetStr).repeat(repeatSum) + targetStr);
                 }
             }
         }

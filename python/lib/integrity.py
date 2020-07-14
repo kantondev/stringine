@@ -103,7 +103,7 @@ def main(string):
                     if (rnd is (spins - 1)):
                         return spin(rnd + 1, xor_last, sbtos(btosb(xor_last)))
                     else:
-                        return spin(rnd + 1, padBits([], chunkLengthBits), reverse(string) * repeat_count + string)
+                        return spin(rnd + 1, padBits([], chunkLengthBits), reverse(target) * repeat_count + target)
 
                 char_index += 1
                         

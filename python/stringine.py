@@ -21,5 +21,7 @@ from lib.rotate import main as rotate
 
 from lib.randomChars import main as randomChars
 
+from lib.integrity import main as integrity
+
 from lib.map import char as charMap
 from lib.map import translate as translateMap

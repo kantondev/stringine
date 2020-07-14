@@ -16,6 +16,7 @@ const LIB = {
     isValidNumber: require("./lib/isValidNumber.js"),
     randomChars: require("./lib/randomChars.js"),
     rotate: require("./lib/rotate.js"),
+    integrity: require("./lib/integrity.js"),
 
     translateMap: require("./lib/map.js").translate,
     charMap: require("./lib/map.js").char,

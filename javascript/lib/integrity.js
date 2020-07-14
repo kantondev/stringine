@@ -150,7 +150,9 @@ var integrity = function (str) {
                         return;
                     }
                     if (round == (spinRounds - 1)) return spin(round + 1, xorLast, sbtos(btosb(xorLast)));
-                    else return spin(round + 1, padBits([], chunkLengthBits), require("./reverse.js")(targetStr).repeat(repeatSum) + targetStr);
+                    else return spin(round + 1,
+                        padBits([], chunkLengthBits),
+                        round == 1 ? require("./reverse.js")(str).repeat(repeatSum) : require("./reverse.js")(str));
                 }
             }
         }

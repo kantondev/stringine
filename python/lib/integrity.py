@@ -78,6 +78,17 @@ def main(string):
             xor_last = first
             char_index = 0
 
+            def stopIteration():
+                if rnd is spins:
+                    return sbtos(btosb(xor_last))
+                if (rnd is (spins - 1)):
+                    return spin(rnd + 1, xor_last, sbtos(btosb(xor_last)))
+                else:
+                    next_target = reverse(string)
+                    if rnd == 1:
+                        next_target = next_target * repeat_count
+                    return spin(rnd + 1, padBits([], chunkLengthBits), next_target)
+
             while True:
                 current_chars = target[0:chunkLengthBytes]
 
@@ -96,15 +107,6 @@ def main(string):
         
                     target = target[1:]
                 
-
-                def stopIteration():
-                    if rnd is spins:
-                        return sbtos(btosb(xor_last))
-                    if (rnd is (spins - 1)):
-                        return spin(rnd + 1, xor_last, sbtos(btosb(xor_last)))
-                    else:
-                        return spin(rnd + 1, padBits([], chunkLengthBits), reverse(target) * repeat_count + target)
-
                 char_index += 1
                         
 

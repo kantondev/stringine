@@ -7,7 +7,7 @@
  * 
  * @return {null|String} The modified string (or unmodified, in case `count` was 0, the string was 1 character long, etc).
  * 
- * Returns `null` if the arguments are not valid or an error occurs.
+ * Returns `null` or throws a `TypeError` if the arguments are not valid or an error occurs.
  * 
  * Warning: this will return `null` if you try to move more characters than the string has.
  */

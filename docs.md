@@ -247,6 +247,6 @@ A resource for built-in translation maps.
 
 `translateMap.default` -- The default translation map which covers A-Z + 0-9. Only uses characters found from a basic keyboard.
 
-`charMap.extended` -- An extended translation map which covers A-Z + 0-9 + ,.!? + space. Uses an extended set of Unicode characters.
+`translateMap.extended` -- An extended translation map which covers A-Z + 0-9 + ,.!? + space. Uses an extended set of Unicode characters.
 
-`charMap.dots` -- A translation map which covers A-Z + 0-9 + ,.!? + space. Only uses braille patterns (hence the name "dots").
+`translateMap.dots` -- A translation map which covers A-Z + 0-9 + ,.!? + space. Only uses braille patterns (hence the name "dots").

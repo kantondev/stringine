@@ -21,7 +21,8 @@ typescript/tsconfig.json
 
 # Project files #
 *.sln
-*.csproj
+*.csproj*
+*.vcxproj*
 
 # Python cache #
 **/__pycache__/

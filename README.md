@@ -1,6 +1,9 @@
 # stringine
 
-A simple cross-platform string manipulation utility
+A simple cross-language string manipulation utility
+
+### Stringine left in the past.
+Stringine development stopped in July 2020, and the repository is officially archived as of September 2021. The library works as normal, but it remains available in only 3 languages and has relatively small capabilities.
 
 ### Looking for documentation?
 
@@ -14,8 +17,3 @@ Stringine's functionality ranges from light functions (such as string capitaliza
 The reason why we have lighter features that a developer could implement themselves is being all-in-one: a developer only has to use Stringine and no other modules or implementations to achieve even the simplest functionality in their application!
 
 A developer can also easily move the exact same line of code to another language and achieve the same result: that's what Stringine is all about.
-
-### Collaborate
-
-Stringine is currently under development and there's still a lot to be done!
-If you want to help, you are welcome to contribute.
